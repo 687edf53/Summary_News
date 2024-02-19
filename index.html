@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="مع ملخص الأخبار - موقع لعرض آخر الأخبار باللغة العربية يعرض لك العناوين لتلخيص الاخبار ويمكنك تصفحها بسهولة من خلال الزر و تحضر الأخبار من المصادر المختلفة">
+  <meta name="keywords" content="ملخص الأخبار, موقع الأخبار, موقع الأخبار باللغة العربية, الأخبار, ملخص الاخبار, الأخبار باللغة العربية,غزة,فلسطين,رفح,كل الاخبار,الجزيرة,اخبار, سكاي نيوز,summary news,مصر,اسرائيل,روسيا,الملخص,الاخبار,اخبار غزة,اطفال غزة,اخبار فلسطين,اخبار رفح,اخبار كل الاخبار,اخبار ملخص الاخبار,ملخص الاخبار">
+  <title>ملخص الاخبار</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    /* Critical CSS */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-weight: 500;
+        font-family: 'Cairo', sans-serif;
+    }
+  </style>
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+  <nav>
+    <div class="logo">ملخص الاخبار</div>
+    <ul class="nav-links">
+      <li><a href="#">الكل</a></li>
+      <li><a href="#">غزة</a></li>
+      <li><a href="#">فلسطين</a></li>
+      <li><a href="#">رفح</a></li>
+      <li>
+        <select name="اختر المصدر" id="sources">
+          <option value="aljazeera">موقع الجزيرة</option>
+          <option value="skynews">موقع سكاي نيوز</option>
+          <option value="all" selected>كل المصادر</option>
+        </select>
+      </li>
+      <li><i class="fa-solid fa-search"></i></li>
+    </ul>
+  </nav>
+
+  <header>
+    <div class="preloader"></div>
+    <h1>ملخص الاخبار</h1>
+  </header>
+
+  <div class="search">
+    <input type="text" class="search-input" placeholder="البحث">
+    <button class="search-btn">بحث</button>
+  </div>
+
+  <section>
+    <div class="container">
+
+    </div>
+  </section>
+
+  <script src="./JS/main.js" defer></script>
+</body>
+
+</html>
