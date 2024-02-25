@@ -1,3 +1,3 @@
 ## arabic summary news website
-to use it:
+to see it:
 https://687edf53.github.io/Summary_News
