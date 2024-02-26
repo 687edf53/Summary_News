@@ -46,6 +46,11 @@ document.addEventListener("DOMContentLoaded",async function () {
           newsElement.classList.add("news-item");
           newsElement.dataset.source = "aljazeera";
 
+          const newsMetaTag = document.createElement('meta')
+          newsMetaTag.itemprop = 'theNews'
+          newsMetaTag.content = 'theNewsElement'
+          newsElement.appendChild(newsMetaTag);
+
           const spanSource = document.createElement("span");
           spanSource.appendChild(document.createTextNode("موقع الجزيرة"));
           spanSource.classList.add("source");
@@ -57,6 +62,10 @@ document.addEventListener("DOMContentLoaded",async function () {
           link.href = newsItem.url.replace("aljazeera.net", "ajnet.me");
           link.target = "_blank";
           link.textContent = "عرض التفاصيل";
+          const metaTag = document.createElement('meta')
+          metaTag.itemprop = 'newsLink'
+          metaTag.content = 'read more'
+          link.appendChild(metaTag)
 
           newsElement.appendChild(headline);
           newsElement.appendChild(link);
