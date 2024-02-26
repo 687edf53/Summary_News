@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded",async function () {
           newsElement.dataset.source = "aljazeera";
 
           const newsMetaTag = document.createElement('meta')
-          newsMetaTag.itemprop = 'theNews'
+          newsMetaTag.setAttribute('itemprop','theNews')
           newsMetaTag.content = 'theNewsElement'
           newsElement.appendChild(newsMetaTag);
 
@@ -63,8 +63,8 @@ document.addEventListener("DOMContentLoaded",async function () {
           link.target = "_blank";
           link.textContent = "عرض التفاصيل";
           const metaTag = document.createElement('meta')
-          metaTag.itemprop = 'newsLink'
-          metaTag.content = 'read more'
+          metaTag.setAttribute('itemprop','newsLink')
+          metaTag.content = newsItem.url.replace("aljazeera.net", "ajnet.me");
           link.appendChild(metaTag)
 
           newsElement.appendChild(headline);
